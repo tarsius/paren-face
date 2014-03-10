@@ -50,6 +50,7 @@
 
 (defgroup paren-face nil
   "Face for parentheses in lisp modes."
+  :group 'font-lock-extra-types
   :group 'faces)
 
 (defface parenthesis '((t (:foreground "DimGray")))
