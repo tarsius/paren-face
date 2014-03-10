@@ -78,7 +78,8 @@ one of the modes listed here."
   (if paren-face-mode
       (font-lock-add-keywords  nil paren-face-keywords)
     (font-lock-remove-keywords nil paren-face-keywords))
-  (font-lock-fontify-buffer))
+  (when (called-interactively-p 'any)
+    (font-lock-fontify-buffer)))
 
 ;;;###autoload
 (define-globalized-minor-mode global-paren-face-mode
