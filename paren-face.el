@@ -68,7 +68,10 @@ is turned on in all buffers whose major mode is or derives from
 one of the modes listed here."
   :group 'paren-face)
 
-(defconst paren-face-keywords '(("[()]" 0 'parenthesis)))
+(defcustom paren-face-regexp "[()]"
+  "Regular expression to match parentheses."
+  :group 'paren-face)
+;;(make-variable-buffer-local 'paren-face-regexp)
 
 (defvar paren-face-mode-lighter "")
 
@@ -76,11 +79,12 @@ one of the modes listed here."
 (define-minor-mode paren-face-mode
   "Use a dedicated face just for parentheses."
   :lighter paren-face-mode-lighter
-  (if paren-face-mode
-      (font-lock-add-keywords  nil paren-face-keywords)
-    (font-lock-remove-keywords nil paren-face-keywords))
-  (when (called-interactively-p 'any)
-    (font-lock-fontify-buffer)))
+  (let ((keywords `((,paren-face-regexp 0 'parenthesis))))
+    (if paren-face-mode
+        (font-lock-add-keywords  nil keywords)
+      (font-lock-remove-keywords nil keywords))
+    (when (called-interactively-p 'any)
+      (font-lock-fontify-buffer))))
 
 ;;;###autoload
 (define-globalized-minor-mode global-paren-face-mode
