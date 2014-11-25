@@ -1,6 +1,6 @@
 ;;; paren-face.el --- a face for parentheses in lisp modes
 
-;; Copyright (C) 2013  Jonas Bernoulli
+;; Copyright (C) 2013-2014  Jonas Bernoulli
 
 ;; Maintainer: Jonas Bernoulli <jonas@bernoul.li>
 ;; Homepage: http://github.com/tarsius/paren-face
