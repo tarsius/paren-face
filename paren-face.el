@@ -60,8 +60,11 @@ See `global-paren-face-mode' for an easy way to do so."
   :group 'paren-face)
 
 (defcustom paren-face-modes
-  '(lisp-mode emacs-lisp-mode lisp-interaction-mode ielm-mode
-    scheme-mode slime-repl-mode clojure-mode nrepl-mode)
+  '(lisp-mode lisp-interaction-mode slime-repl-mode
+              emacs-lisp-mode ielm-mode
+              scheme-mode inferior-scheme-mode
+              clojure-mode cider-repl-mode nrepl-mode
+              arc-mode inferior-arc-mode)
   "Major modes in which `paren-face-mode' should be turned on.
 When `global-paren-face-mode' is turned on, the buffer-local mode
 is turned on in all buffers whose major mode is or derives from
