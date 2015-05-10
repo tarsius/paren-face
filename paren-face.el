@@ -86,7 +86,10 @@ one of the modes listed here."
   :type 'regexp
   :group 'paren-face)
 
-(defvar paren-face-mode-lighter "")
+(defcustom paren-face-mode-lighter ""
+  "String to display in the mode line when `paren-face-mode' is active."
+  :type 'string
+  :group 'paren-face)
 
 ;;;###autoload
 (define-minor-mode paren-face-mode
