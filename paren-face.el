@@ -78,10 +78,12 @@ See `global-paren-face-mode' for an easy way to do so."
 When `global-paren-face-mode' is turned on, the buffer-local mode
 is turned on in all buffers whose major mode is or derives from
 one of the modes listed here."
+  :type '(repeat symbol)
   :group 'paren-face)
 
 (defcustom paren-face-regexp "[()]"
   "Regular expression to match parentheses."
+  :type 'regexp
   :group 'paren-face)
 
 (defvar paren-face-mode-lighter "")
