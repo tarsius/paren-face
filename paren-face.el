@@ -97,7 +97,10 @@ one of the modes listed here."
         (font-lock-add-keywords  nil keywords)
       (font-lock-remove-keywords nil keywords)))
   (when (called-interactively-p 'any)
-    (font-lock-fontify-buffer)))
+    (if (fboundp 'font-lock-ensure)
+        (font-lock-ensure)
+      (with-no-warnings
+        (font-lock-fontify-buffer)))))
 
 ;;;###autoload
 (define-globalized-minor-mode global-paren-face-mode
