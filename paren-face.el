@@ -97,8 +97,8 @@ one of the modes listed here."
         (font-lock-add-keywords  nil keywords)
       (font-lock-remove-keywords nil keywords)))
   (when (called-interactively-p 'any)
-    (if (fboundp 'font-lock-ensure)
-        (font-lock-ensure)
+    (if (fboundp 'font-lock-flush)
+        (font-lock-flush)
       (with-no-warnings
         (font-lock-fontify-buffer)))))
 
