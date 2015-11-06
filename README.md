@@ -26,7 +26,7 @@ works with other major modes, just add the mode to the value of
 
 By default only parentheses are dimmed, customize option
 `paren-face-regexp` if you also want to dim brackets or braces.
-If you want to use a differnt regexp in different major-modes,
+If you want to use a different regexp in different major-modes,
 then use a the mode hook to set the buffer local value.
 
 ## History
