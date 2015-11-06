@@ -115,4 +115,4 @@ one of the modes listed here."
 ;; Local Variables:
 ;; indent-tabs-mode: nil
 ;; End:
-;; paren-face.el ends here
+;;; paren-face.el ends here
