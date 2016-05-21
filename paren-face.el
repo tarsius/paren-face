@@ -96,9 +96,13 @@ one of the modes listed here."
     (if paren-face-mode
         (font-lock-add-keywords  nil keywords)
       (font-lock-remove-keywords nil keywords)))
-  (when (called-interactively-p 'any)
-    (if (fboundp 'font-lock-flush)
-        (font-lock-flush)
+  (when font-lock-mode
+    (if (and (fboundp 'font-lock-flush)
+             (fboundp 'font-lock-ensure))
+        (save-restriction
+          (widen)
+          (font-lock-flush)
+          (font-lock-ensure))
       (with-no-warnings
         (font-lock-fontify-buffer)))))
 
