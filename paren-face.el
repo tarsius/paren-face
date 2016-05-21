@@ -62,7 +62,7 @@
   :group 'font-lock-extra-types
   :group 'faces)
 
-(defface parenthesis '((t (:foreground "DimGray")))
+(defface parenthesis '((t (:inherit shadow)))
   "Face for parentheses in lisp modes.
 This face is only used if `paren-face-mode' is turned on.
 See `global-paren-face-mode' for an easy way to do so."
