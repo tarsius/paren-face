@@ -3,7 +3,7 @@
 ;; Copyright (C) 2013-2016  Jonas Bernoulli
 
 ;; Maintainer: Jonas Bernoulli <jonas@bernoul.li>
-;; Homepage: http://github.com/tarsius/paren-face
+;; Homepage: https://github.com/tarsius/paren-face
 
 ;; This file is not part of GNU Emacs.
 
