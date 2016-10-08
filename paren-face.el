@@ -1,4 +1,4 @@
-;;; paren-face.el --- a face for parentheses in lisp modes
+;;; paren-face.el --- a face for parentheses in lisp modes  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2013-2016  Jonas Bernoulli
 
