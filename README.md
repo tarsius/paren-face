@@ -1,8 +1,9 @@
-# A face dedicated to lisp parentheses
+A face dedicated to lisp parentheses
+====================================
 
 This library defines a face named `parenthesis` used just for
-parentheses.  The intended purpose of this face is to make parentheses
-less visible by dimming them.
+parentheses.  The intended purpose of this face is to make
+parentheses less visible by dimming them.
 
 We lispers probably don't need to be constantly made aware of the
 existence of the parentheses.  Dimming them might be even more
@@ -29,9 +30,9 @@ By default only parentheses are dimmed, customize option
 If you want to use a different regexp in different major-modes,
 then use a the mode hook to set the buffer local value.
 
-## History
+History
+-------
 
 Dave Pearson's `parenface.el` implements the same basic idea.
 Unfortunately that library doesn't use the appropriate Emacs
 interfaces correctly, so I wrote this as a replacement.
-
