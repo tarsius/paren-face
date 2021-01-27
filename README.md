@@ -1,9 +1,9 @@
 A face dedicated to lisp parentheses
 ====================================
 
-This library defines a face named `parenthesis` used just for
-parentheses.  The intended purpose of this face is to make
-parentheses less visible by dimming them.
+This library defines a face named `parenthesis' used just for
+parentheses.  The originally intended purpose of this face is
+to make parentheses less visible in Lisp code by dimming them.
 
 We lispers probably don't need to be constantly made aware of the
 existence of the parentheses.  Dimming them might be even more
@@ -23,7 +23,8 @@ of the modes dedicated to that, e.g. the builtin `show-paren-mode`.
 
 While this face is intended to be used with Lisp modes, it also
 works with other major modes, just add the mode to the value of
-`paren-face-modes`.
+`paren-face-modes`.  Likewise, while this face is intended for
+dimming, it can also be used for highlighting.
 
 By default only parentheses are dimmed, customize option
 `paren-face-regexp` if you also want to dim brackets or braces.
