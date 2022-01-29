@@ -1,6 +1,6 @@
 ;;; paren-face.el --- a face for parentheses in lisp modes  -*- lexical-binding: t -*-
 
-;; Copyright (C) 2013-2021  Jonas Bernoulli
+;; Copyright (C) 2013-2022  Jonas Bernoulli
 
 ;; Maintainer: Jonas Bernoulli <jonas@bernoul.li>
 ;; Homepage: https://github.com/tarsius/paren-face
@@ -41,14 +41,14 @@
 ;; of the modes dedicated to that, e.g. the builtin `show-paren-mode'.
 
 ;; While this face is intended to be used with Lisp modes, it also
-;; works with other major modes, just add the mode to the value of
+;; works with other major-modes, just add the mode to the value of
 ;; `paren-face-modes'.  Likewise, while this face is intended for
 ;; dimming, it can also be used for highlighting.
 
 ;; By default only parentheses are dimmed, customize option
 ;; `paren-face-regexp' if you also want to dim brackets or braces.
 ;; If you want to use a different regexp in different major-modes,
-;; then use a the mode hook to set the buffer local value.
+;; then use the major-mode hook to set the buffer local value.
 
 ;;; History:
 
