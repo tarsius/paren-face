@@ -117,7 +117,7 @@ To add [ and ] use something like \"[][()]\"."
   :group 'paren-face)
 
 (defun turn-on-paren-face-mode-if-desired ()
-  (when (apply 'derived-mode-p paren-face-modes)
+  (when (apply #'derived-mode-p paren-face-modes)
     (paren-face-mode 1)))
 
 ;;; _
