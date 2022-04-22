@@ -5,6 +5,8 @@
 ;; Maintainer: Jonas Bernoulli <jonas@bernoul.li>
 ;; Homepage: https://github.com/tarsius/paren-face
 
+;; Package-Requires: ((emacs "25.1") (compat "28.1.1.0"))
+
 ;; This file is not part of GNU Emacs.
 
 ;; This file is free software; you can redistribute it and/or modify
@@ -57,6 +59,8 @@
 ;; interfaces correctly, so I wrote this as a replacement.
 
 ;;; Code:
+
+(require 'compat)
 
 (defgroup paren-face nil
   "Face for parentheses in lisp modes."
