@@ -48,10 +48,11 @@
 ;; `paren-face-modes'.  Likewise, while this face is intended for
 ;; dimming, it can also be used for highlighting.
 
-;; By default only parentheses are dimmed, customize option
-;; `paren-face-regexp' if you also want to dim brackets or braces.
-;; If you want to use a different regexp in different major-modes,
-;; then use the major-mode hook to set the buffer local value.
+;; By default parentheses and brackets are dimmed, customize option
+;; `paren-face-regexp' if you also want to dim braces or don't want
+;; to dim brackets.  If you want to use a different regexp in different
+;; major-modes, then use the major-mode hook to set the buffer local
+;; value.
 
 ;;; Code:
 
@@ -82,8 +83,7 @@ one of the modes listed here."
   :group 'paren-face)
 
 (defcustom paren-face-regexp "[][()]"
-  "Regular expression to match parentheses.
-To add [ and ] use something like \"[][()]\"."
+  "Regular expression to match parentheses."
   :type 'regexp
   :group 'paren-face)
 
