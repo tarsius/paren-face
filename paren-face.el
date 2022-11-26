@@ -53,12 +53,6 @@
 ;; If you want to use a different regexp in different major-modes,
 ;; then use the major-mode hook to set the buffer local value.
 
-;;; History:
-
-;; Dave Pearson's `parenface.el' implements the same basic idea.
-;; Unfortunately that library doesn't use the appropriate Emacs
-;; interfaces correctly, so I wrote this as a replacement.
-
 ;;; Code:
 
 (require 'compat)
