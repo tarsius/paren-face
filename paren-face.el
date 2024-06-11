@@ -39,7 +39,7 @@
 ;; mode `paren-face-mode' is turned on.
 
 ;; The parenthesis at or before point, as well as the parenthesis at
-;; the other end of the s-expression should actually stand out, but
+;; the other end of the s-expression, should actually stand out, but
 ;; that is beyond the scope of the mode defined here.  Instead use one
 ;; of the modes dedicated to that, e.g., the builtin `show-paren-mode'.
 
