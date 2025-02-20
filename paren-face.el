@@ -1,6 +1,6 @@
 ;;; paren-face.el --- A face for parentheses in lisp modes  -*- lexical-binding:t -*-
 
-;; Copyright (C) 2013-2024 Jonas Bernoulli
+;; Copyright (C) 2013-2025 Jonas Bernoulli
 
 ;; Author: Jonas Bernoulli <emacs.paren-face@jonas.bernoulli.dev>
 ;; Homepage: https://github.com/tarsius/paren-face
