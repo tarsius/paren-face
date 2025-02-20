@@ -32,7 +32,7 @@
 
 ;; We lispers probably don't need to be constantly made aware of
 ;; the existence of the parentheses.  Dimming them might be even
-;; more useful for people new to lisp who have not yet learned to
+;; more useful for people new to Lisp who have not yet learned to
 ;; subconsciously blend out the parentheses.
 
 ;; To use the `parenthesis' face, turn on `global-paren-face-mode'.
@@ -60,12 +60,12 @@
 (require 'compat)
 
 (defgroup paren-face nil
-  "Face for parentheses in lisp modes."
+  "Face for parentheses in Lisp modes."
   :group 'font-lock-extra-types
   :group 'faces)
 
 (defface parenthesis '((t (:inherit shadow)))
-  "Face for parentheses in lisp modes.
+  "Face for parentheses in Lisp modes.
 This face is only used if `paren-face-mode' is turned on.
 See `global-paren-face-mode' for an easy way to do so."
   :group 'paren-face)
