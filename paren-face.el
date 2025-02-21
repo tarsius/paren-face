@@ -109,10 +109,10 @@ one of the modes listed here."
 
 ;;;###autoload
 (define-globalized-minor-mode global-paren-face-mode
-  paren-face-mode turn-on-paren-face-mode-if-desired
+  paren-face-mode paren-face-mode--turn-on
   :group 'paren-face)
 
-(defun turn-on-paren-face-mode-if-desired ()
+(defun paren-face-mode--turn-on ()
   (when (apply #'derived-mode-p paren-face-modes)
     (paren-face-mode 1)))
 
