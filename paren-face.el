@@ -7,7 +7,7 @@
 ;; Keywords: faces lisp
 
 ;; Package-Version: 1.1.2
-;; Package-Requires: ((emacs "26.1") (compat "30.0.0.0"))
+;; Package-Requires: ((emacs "26.1") (compat "30.0.2.0"))
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
