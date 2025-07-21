@@ -101,11 +101,7 @@ one of the modes listed here."
     (if paren-face-mode
         (font-lock-add-keywords  nil keywords)
       (font-lock-remove-keywords nil keywords)))
-  (when font-lock-mode
-    (save-restriction
-      (widen)
-      (font-lock-flush)
-      (font-lock-ensure))))
+  (font-lock-flush))
 
 ;;;###autoload
 (define-globalized-minor-mode global-paren-face-mode
