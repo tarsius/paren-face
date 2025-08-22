@@ -112,9 +112,5 @@ one of the modes listed here."
   (when (apply #'derived-mode-p paren-face-modes)
     (paren-face-mode 1)))
 
-;;; _
 (provide 'paren-face)
-;; Local Variables:
-;; indent-tabs-mode: nil
-;; End:
 ;;; paren-face.el ends here

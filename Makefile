@@ -3,6 +3,8 @@
 PKG = paren-face
 
 ELS   = $(PKG).el
+ELS  += parenthesis-face.el
+ELS  += bracket-face.el
 ELCS  = $(ELS:.el=.elc)
 
 DEPS  = compat

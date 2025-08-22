@@ -1,35 +1,37 @@
-* A face dedicated to lisp parentheses
+* Faces for parentheses and/or brackets
 
-This library defines a face named ~parenthesis~ used just for
-parentheses.  The originally intended purpose of this face is
-to make parentheses less visible in Lisp code by dimming them.
+Three libraries are being maintained in this repository, each of which
+defines a face to be used for parentheses and/or brackets.  While they
+are maintained in the same repository, each library is distributed on
+Melpa as a separate package.
 
-We lispers probably don't need to be constantly made aware of the
-existence of the parentheses.  Dimming them might be even more
-useful for people new to lisp who have not yet learned to
-subconsciously blend out the parentheses.
+*** ~paren-face~
+
+This library implements a single face, which was originally only used
+for parentheses.  Nowadays the same face is also used for brackets, by
+default.  While it is possible to go back to using the face just for
+parentheses, this package does not allow using a dedicated face just
+for brackets.
+
+I have considered updating this package to provide two separate faces,
+but it quickly became clear that I would like to make further changes,
+but those would break the expectations of existing users.
+
+*** ~parenthesis-face~ and ~bracket-face~
+
+Instead of heavily modifying ~paren-face~, I have implemented two new,
+separate libraries/packages.  I am using two separate packages, so
+that all the symbol names begin with the name of their package (as
+one is supposed to do).
+
+** Motivation
+
+We Lispers probably don't need to be constantly made aware of the
+existence of the parentheses.  Dimming them might be even more useful
+for people new to Lisp, who have not yet learned to subconsciously
+blend out the parentheses.
 
 [[parentheses.png]]
-
-To use the ~parenthesis~ face, turn on ~global-paren-face-mode~.
-The option ~paren-face-modes~ controls in what buffers the minor
-mode ~paren-face-mode~ is turned on.
-
-The parenthesis at or before point, as well as the parenthesis at
-the other end of the s-expression, should actually stand out, but
-that is beyond the scope of the mode defined here.  Instead use one
-of the modes dedicated to that, e.g., the builtin ~show-paren-mode~.
-
-While this face is intended to be used with Lisp modes, it also
-works with other major modes, just add the mode to the value of
-~paren-face-modes~.  Likewise, while this face is intended for
-dimming, it can also be used for highlighting.
-
-By default parentheses and brackets are dimmed, customize option
-~paren-face-regexp~ if you also want to dim braces or don't want to
-dim brackets.  If you want to use a different regexp in different
-major-modes, then use the major-mode hook to set the buffer local
-value.
 
 #+html: <br><br>
 #+html: <a href="https://github.com/tarsius/paren-face/actions/workflows/compile.yml"><img alt="Compile" src="https://github.com/tarsius/paren-face/actions/workflows/compile.yml/badge.svg"/></a>
