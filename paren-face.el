@@ -55,6 +55,11 @@
 ;; major-modes, then use the major-mode hook to set the buffer local
 ;; value.
 
+;; If you would like to use different faces for parentheses and for
+;; brackets, check out the `parenthesis-face' and `bracket-face'
+;; packages, which are being maintained in the same repository as
+;; this package.
+
 ;;; Code:
 
 (require 'compat)
