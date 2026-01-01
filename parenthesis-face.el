@@ -6,7 +6,7 @@
 ;; Homepage: https://github.com/tarsius/paren-face
 ;; Keywords: faces lisp
 
-;; Package-Version: 1.2.2
+;; Package-Version: 1.2.3
 ;; Package-Requires: ((emacs "30.1"))
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
