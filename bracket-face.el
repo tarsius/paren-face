@@ -1,6 +1,6 @@
 ;;; bracket-face.el --- A face for brackets  -*- lexical-binding:t -*-
 
-;; Copyright (C) 2025 Jonas Bernoulli
+;; Copyright (C) 2025-2026 Jonas Bernoulli
 
 ;; Author: Jonas Bernoulli <emacs.paren-face@jonas.bernoulli.dev>
 ;; Homepage: https://github.com/tarsius/paren-face
