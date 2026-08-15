@@ -57,6 +57,7 @@ This also affects modes deriving from the listed modes."
 (defun bracket-face--add-keywords ()
   (font-lock-add-keywords nil bracket-face-keywords))
 
+;;;###autoload
 (define-minor-mode bracket-face-mode
   "Use `bracket-face' in modes listed in `bracket-face-modes'.
 The face is also used in modes that derive from the listed modes."

@@ -57,6 +57,7 @@ This also affects modes that derive from the listed modes."
 (defun parenthesis-face--add-keywords ()
   (font-lock-add-keywords nil parenthesis-face-keywords))
 
+;;;###autoload
 (define-minor-mode parenthesis-face-mode
   "Use `parenthesis-face' in modes listed in `parenthesis-face-modes'.
 The face is also used in modes that derive from the listed modes."
