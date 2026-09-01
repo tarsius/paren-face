@@ -6,7 +6,7 @@
 ;; Homepage: https://github.com/tarsius/paren-face
 ;; Keywords: faces lisp
 
-;; Package-Version: 1.2.4
+;; Package-Version: 1.2.5
 ;; Package-Requires: (
 ;;     (emacs  "28.1")
 ;;     (compat "31.0"))
